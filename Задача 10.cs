@@ -8,4 +8,12 @@
 Console.WriteLine("Введите трёхзначное число: ");
 int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
 string DigitNumber = Convert.ToString(threeDigitNumber);
-Console.WriteLine("Вторая цифра введенного числа: " + DigitNumber [1]);
+if (DigitNumber.Length > 3)
+{
+    Console.WriteLine("Вы ввели не трехзначное число!");
+    return;
+}
+else
+{
+    Console.WriteLine("Вторая цифра введенного числа: " + DigitNumber [1]);
+}
